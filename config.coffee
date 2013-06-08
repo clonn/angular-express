@@ -16,13 +16,12 @@ exports.config =
         'test/scenarios.js': /^test(\/|\\)e2e/
       order:
         before: [
-          'vendor/console-polyfill/index.js'
           'vendor/jquery/jquery.js'
           'vendor/angular/angular.js'
           'vendor/angular-resource/angular-resource.js'
           'vendor/angular-cookies/angular-cookies.js'
           'vendor/angular-sanitize/angular-sanitize.js'
-          'vendor/bootstrap/docs/assets/js/bootstrap.js'
+          'vendor/foundation/js/*.js'
         ]
 
     stylesheets:

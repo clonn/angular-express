@@ -9,6 +9,7 @@
     "url": ""
   },
   "scripts": {
+    "build": "brunch build",
     "start": "brunch watch --server",
     "test": "brunch test"
   },
@@ -32,7 +33,7 @@
    "ansi-color": "*",
    "growl": "*",
    "date-utils": "*"
-   
+
    },
   "devDependencies": {}
 }

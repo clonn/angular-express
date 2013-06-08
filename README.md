@@ -1,8 +1,7 @@
-# Brunch with Chaplin
-![](https://a248.e.akamai.net/camo.github.com/b7ebb8bbcec7938940cf8e9c441124c3bddafd3a/687474703a2f2f662e636c2e6c792f6974656d732f34373039326b30423141334a317a3166306b34362f6277632e706e67)
+# Brunch with Express and Angular 
 
 Brunch with Chaplin is a skeleton (boilerplate) for [Brunch](http://brunch.io)
-based on [Chaplin](http://chaplinjs.org) architecture.
+based on [Express](http://expressjs.com/) and [Angular](http://angularjs.org/).
 
 Requires Brunch 1.6+.
 
@@ -14,37 +13,24 @@ so you don't need to specify `--skeleton` option for the command.
 * Open the `public/` dir to see the result.
 * Write your code.
 
-Example application built with the skeleton:
-[Ost.io](https://github.com/paulmillr/ostio).
+`brunch new myapp --skeleton https://github.com/clonn/angular-express`
 
-See [Chaplin site](http://chaplinjs.org) for docs and more info.
+## Start server
 
-## Difference from Chaplin Boilerplate
-[Chaplin Boilerplate](https://github.com/chaplinjs/chaplin-boilerplate)
-is a official boilerplate all for chaplin. This skeleton is almost the same,
-except a few changes:
+Complie static files to assert folder (defaul called public)
 
-* Added Header.
-* CommonJS is used instead of AMD, because it's easier to use & debug.
+`brunch build`
+
+Start Exrepss server
+
+`brunch w -s`
 
 ## Features
 * HTML5Boilerplate html & css are included.
 * CoffeeScript + Stylus + Handlebars as app languages
 (you can change this to anything you want)
-* Backbone as main MVC/MVP library, Chaplin as meta-framework.
-* Support of IE8 and up.
-* Cross-module communication using the Mediator and Publish/Subscribe patterns
-* Controllers for managing individual UI views
-* Rails-style routes which map URLs to controller actions
-* An application view as dispatcher and view manager
-* Extended model, view and collection classes to avoid repetition and
-enforce conventions
-* Strict memory management and object disposal
-* A collection with additional manipulation methods for smarter change events
-* A collection view for easy and intelligent list rendering
-
-## Authentication
-If you build an application with authentication, there are some useful abstractions for it out there: https://github.com/chaplinjs/chaplin-auth.
+* Angular framework build in. 
+* Express as a backend server include.
 
 ## License
 The MIT license.

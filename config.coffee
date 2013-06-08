@@ -30,7 +30,8 @@ exports.config =
         'css/app.css': /^(app|vendor)/
       order:
         before: [
-          'app/styles/app.less'
+          'vendor/foundation/css/foundation.css'
+          'vendor/foundation/css/normalize.css'
         ]
 
     templates:

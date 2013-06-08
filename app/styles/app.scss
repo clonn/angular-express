@@ -1,0 +1,16 @@
+.top-bar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.container {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+footer {
+	background: #3f3f3f;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}

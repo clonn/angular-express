@@ -23,24 +23,23 @@ html(lang='en', ng-app='app')
     script(src='/js/partials.js')
     script(src='/js/app.js')
   body(ng-controller='AppCtrl')
-    .wrapper
-      .navbar.navbar-static-top
-        .navbar-inner
-          .container
-            button.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(href='/').brand Angular Brunch Seed
-            .nav-collapse
-              div(ng-include="'/partials/nav.html'")
-      .container.main-content
-        div(ng-view)
-        div Angular Brunch seed app: v<span app-version></span>
-      .push
+      .top-bar
+        .row
+          ul.title-area
+            li.name
+              h1 
+                a(href='/').brand Angular Brunch Seed
+            li.toggle-topbar.menu-icon
+              a(href='#')
+                span Menu
+          div(ng-include="'/partials/nav.html'")
+      .row
+        .container.main-content
+          div(ng-view)
+          div.radius.secondary.label Angular Brunch seed app: v
+            span(app-version)
+        .push
 
-    footer.footer
-      .container
-        p
-          small
-            a(href='https://github.com/scotch/angular-brunch-seed') angular-brunch-seed | source
+    footer
+      p
+        a(href='https://github.com/scotch/angular-brunch-seed') angular-brunch-seed | source

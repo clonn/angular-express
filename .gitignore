@@ -27,3 +27,6 @@ vendor/bootstrap/
 vendor/console-polyfill/
 vendor/font-awesome/
 vendor/jquery/
+
+public/
+public/*

@@ -1,4 +1,4 @@
-# Brunch with Express and Angular 
+# Brunch with Express and Angular
 
 Brunch with Chaplin is a skeleton (boilerplate) for [Brunch](http://brunch.io)
 based on [Express](http://expressjs.com/) and [Angular](http://angularjs.org/).
@@ -26,10 +26,12 @@ Start Exrepss server
 `brunch w -s`
 
 ## Features
+* Base on [angular-brunch-seed](https://github.com/scotch/angular-brunch-seed)
+* Express server support, update server routes under express folder
 * HTML5Boilerplate html & css are included.
-* CoffeeScript + Stylus + Handlebars as app languages
+* CoffeeScript + Stylus + Bootstrap as app languages
 (you can change this to anything you want)
-* Angular framework build in. 
+* Angular framework build in.
 * Express as a backend server include.
 
 ## License

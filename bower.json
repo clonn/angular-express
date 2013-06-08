@@ -1,0 +1,20 @@
+{
+  "name": "angular-brunch-seed",
+  "version": "0.3.0",
+  "main": [],
+  "dependencies": {
+    "console-polyfill": "*",
+
+    "jquery": "1.8.3",
+
+    "bootstrap": "~2.3.1",
+    "bootstrap-less-themes": "git://github.com/angular-brunch/bootstrap-less-themes.git",
+    "font-awesome": "3.0.2",
+
+    "angular": "1.0.6",
+    "angular-sanitize": "1.0.6",
+    "angular-resource": "1.0.6",
+    "angular-cookies": "1.0.6",
+    "angular-mocks": "1.0.6"
+  }
+}

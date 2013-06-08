@@ -1,34 +1,35 @@
 exports.config =
   # See http://brunch.io/#documentation for docs.
+  paths:
+    public: 'public'
   files:
     javascripts:
       joinTo:
-        'javascripts/app.js': /^app/
-        'javascripts/vendor.js': /^vendor/
-        'test/javascripts/test.js': /^test[\\/](?!vendor)/
-        'test/javascripts/test-vendor.js': /^test[\\/](?=vendor)/
+        'js/app.js': /^app/
+        'js/vendor.js': /^vendor/
+        'test/scenarios.js': /^test(\/|\\)e2e/
       order:
-        # Files in `vendor` directories are compiled before other files
-        # even if they aren't specified in order.before.
         before: [
-          'vendor/scripts/console-polyfill.js',
-          'vendor/scripts/jquery-1.9.1.js',
-          'vendor/scripts/lodash-1.2.0.js',
-          'vendor/scripts/backbone-1.0.0.js'
-        ]
-        after: [
-          'test/vendor/scripts/test-helper.js'
+          'vendor/console-polyfill/index.js'
+          'vendor/jquery/jquery.js'
+          'vendor/angular/angular.js'
+          'vendor/angular-resource/angular-resource.js'
+          'vendor/angular-cookies/angular-cookies.js'
+          'vendor/angular-sanitize/angular-sanitize.js'
+          'vendor/bootstrap/docs/assets/js/bootstrap.js'
         ]
 
     stylesheets:
       joinTo:
-        'stylesheets/app.css': /^(app|vendor)/
-        'test/stylesheets/test.css': /^test/
+        'css/app.css': /^(app|vendor)/
       order:
-        after: ['vendor/styles/helpers.css']
+        before: [
+          'app/styles/app.less'
+        ]
 
     templates:
-      joinTo: 'javascripts/app.js'
+      joinTo: 
+        'js/dontUseMe' : /^app/ # dirty hack for Jade compiling.
 
   server: 
     path: 'server.coffee'

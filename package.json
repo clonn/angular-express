@@ -1,0 +1,48 @@
+{
+  "author": "Your Name",
+  "name": "package-name",
+  "description": "Package description",
+  "version": "0.0.1",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "brunch build",
+    "start": "brunch watch --server",
+    "test": "brunch test"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "async": "*",
+    "cordell": "*",
+    "debug": "*",
+    "ansi-color": "*",
+    "growl": "*",
+    "date-utils": "*",
+
+    "jade": ">= 0.28",
+    "coffee-script": ">= 1.4",
+    "brunch": ">= 1.5 < 1.6",
+
+    "coffee-script-brunch": ">= 1.5 < 1.6",
+
+    "less-brunch": ">= 1.5 < 1.6",
+    "stylus-brunch": ">= 1.5 < 1.6",
+
+    "auto-reload-brunch": ">= 1.5 < 1.7",
+
+    "uglify-js-brunch": ">= 1.5 < 1.6",
+    "clean-css-brunch": ">= 1.5 < 1.6",
+
+    "bower-stylesheet-brunch": "git://github.com/angular-brunch/bower-stylesheet-brunch/#master",
+    "bower-javascript-brunch": "git://github.com/angular-brunch/bower-javascript-brunch/#master",
+    "bower-asserts-brunch": "git://github.com/angular-brunch/bower-assets-brunch/#master",
+    "bower": "~0.9.2",
+
+    "jade-angularjs-brunch": ">= 0.0.5 <= 0.1"
+
+   },
+  "devDependencies": {}
+}

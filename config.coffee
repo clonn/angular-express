@@ -21,7 +21,9 @@ exports.config =
           'vendor/angular-resource/angular-resource.js'
           'vendor/angular-cookies/angular-cookies.js'
           'vendor/angular-sanitize/angular-sanitize.js'
-          'vendor/foundation/js/*.js'
+        ]
+        afer: [
+          'vendor/foundation/mega-drop.js'
         ]
 
     stylesheets:
@@ -31,6 +33,11 @@ exports.config =
         before: [
           'vendor/foundation/css/foundation.css'
           'vendor/foundation/css/normalize.css'
+          'vendor/foundation/css/mega-drop.css'
+          'vendor/foundation/css/foundation.top-bar.css'
+        ]
+        after: [
+          'vendor/foundation/css/presentation.css'
         ]
 
     templates:

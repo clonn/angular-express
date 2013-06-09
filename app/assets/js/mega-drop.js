@@ -1,0 +1,1 @@
+(function(e){e(function(){e(".toggle-nav").on("click",function(t){var n=e(t.currentTarget);n.hasClass("open")?(n.removeClass("open"),e("#megaDrop").slideUp(400)):(n.addClass("open"),e("#megaDrop").slideDown(400))})})})(jQuery);
